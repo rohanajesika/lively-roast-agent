@@ -37,6 +37,8 @@ network, no clock and no randomness, so both graded runs write the same
 bytes. It validates the line first — 1 to 140 characters, a single
 non-blank line — and exits non-zero rather than writing a bad one. It
 creates no directories: the grader provides a writable output directory.
+`package.json` marks the entry as an ES module so Node 22 runs `main.ts`
+without a module-type warning.
 
 ## Run it
 
